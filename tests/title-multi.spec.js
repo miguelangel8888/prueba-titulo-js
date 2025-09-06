@@ -3,7 +3,9 @@ const {test, expect} = require('@playwright/test')
 const casos=[
     {name:"Caso 1",url:'https://example.com', esperado:"Example Domain"},
     {name:"Caso 2",url:'https://example.com', esperado: /Example/},
-    {name:"Caso 3",url:'https://www.google.com', esperado:"Google"}
+    {name:"Caso 3",url:'https://www.google.com', esperado:"Google"},
+    {name:"Caso 4",url:'https://www.Youtube.com', esperado:"YouTube"}
+
 ];
 
 for(const {name,url,esperado} of casos){
